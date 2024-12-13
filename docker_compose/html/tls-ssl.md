@@ -28,3 +28,9 @@ sudo apt install nginx
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
+## Step4: Key Generate
+```bash
+openssl req -new -newkey rsa:2048 -nodes -keyout web-service.key -out web-service.csr
+```
+## Step5: Configure Nginx
+down below is the conf file
