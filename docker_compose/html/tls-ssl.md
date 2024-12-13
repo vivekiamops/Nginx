@@ -13,5 +13,18 @@ To check if OpenSSL is installed, run the following command:
 ```bash
 dpkg -l | grep openssl
 ```
+If it is not installed, then install it using the following command:
 
-## Step 2:
+```bash
+sudo apt-get install openssl
+```
+
+## Step 2: Install Nginx
+```bash
+sudo apt install nginx
+```
+## Step 3: Check
+```bash
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
