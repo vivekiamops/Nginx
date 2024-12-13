@@ -10,6 +10,7 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./html:/usr/share/nginx/html:ro
+      - ./cache:/var/cache/nginx:ro
     restart: always
     stdin_open: true
     tty: true
