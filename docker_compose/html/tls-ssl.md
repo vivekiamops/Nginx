@@ -32,5 +32,9 @@ sudo systemctl enable nginx
 ```bash
 openssl req -new -newkey rsa:2048 -nodes -keyout web-service.key -out web-service.csr
 ```
-## Step5: Configure Nginx
-down below is the conf file
+## Step5: After received CRT files, keep those .crt files in /etc/ssl/mysite with your private key (web-service.key).
+
+Then update the nginx.conf file which is contain in path /etc/nginx,
+```bah
+vi /etc/nginx/nginx.conf
+```
